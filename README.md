@@ -6,3 +6,10 @@ Pitch: There are a lot of child malnutrition nonprofits around the globe. It’s
 
 MVP Rubric Link: 
 https://docs.google.com/spreadsheets/d/1BbdmSMUdzURMo0wcsr4XSKvegDgB28WkK2wnjmORzDo/edit#gid=0  
+
+
+Web Pages Assignments:
+Home: Sofia
+About Us: Brian 
+Donate: Brian 
+Contact: Sofia 
