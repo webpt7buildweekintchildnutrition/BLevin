@@ -9,7 +9,11 @@ https://docs.google.com/spreadsheets/d/1BbdmSMUdzURMo0wcsr4XSKvegDgB28WkK2wnjmOR
 
 
 Web Pages Assignments:
+<br>
 Home: Sofia
+<br>
 About Us: Brian 
+<br>
 Donate: Brian 
+<br>
 Contact: Sofia 
