@@ -27,7 +27,7 @@ header {
                 font-size: 4rem;
             }
         }
-        h2 {
+        p {
             border-top: 1px solid @light-grey;
             color: @white;
             font-size: 2rem;
@@ -37,7 +37,6 @@ header {
         }
     }
     .start {
-
         border-radius: 100%;
         width: 100px;
         height: 100px;
@@ -78,6 +77,45 @@ header {
             }
           }
     }
-}              
+}
+
+section {
+    margin: 50px 0;
+    h2 {
+        color: #5b5b5b;
+        font-size: 4rem;
+        text-align: center;
+        margin: 10px;
+    }
+    p {
+        color: #5b5b5b;
+        font-size: 2rem;
+        text-align: center;
+        margin: 10px;
+    }
+    .carousel {
+        background-color: @light-grey-background;
+        display: flex;
+        flex-direction: row;
+        padding: 0 10px;
+        div {
+            background-color: @white;
+            margin: 20px 10px;
+            img {
+                max-width: 360px;
+            }
+            h3 {
+                padding-top: 40px;
+                text-align: center;
+                font-size: 2rem;
+            }
+            p {
+                padding-top: 10px;
+                font-size: 1.5rem;
+                line-height: 25px;
+            }
+        }
+    }
+}
 
 
