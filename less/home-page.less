@@ -2,6 +2,7 @@ header {
     height: 100vh;
     background-image: url(/img/brooke-lark-229136-unsplash.jpg);
     background-size: cover;
+    background-position: center center;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -18,6 +19,13 @@ header {
             color: @white;
             font-size: 6rem;
             padding: 10px;
+            text-align: center;
+            @media (max-width: 1000px) {
+                font-size: 5rem;
+            }
+            @media (max-width: 600px) {
+                font-size: 4rem;
+            }
         }
         h2 {
             border-top: 1px solid @light-grey;
@@ -25,6 +33,7 @@ header {
             font-size: 2rem;
             display: inline;
             padding: 10px;
+            text-align: center;
         }
     }
     .start {
@@ -53,9 +62,6 @@ header {
                     border-bottom: 3px solid @white;
                     border-left: 3px solid @white;
                     transform: rotate(315deg);
-                    &:hover {
-                        border-color: #1E90FF;
-                      }
                   }
                   
                   @keyframes bounce {
