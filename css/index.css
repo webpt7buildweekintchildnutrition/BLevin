@@ -130,6 +130,7 @@ html {
   font-size: 62.5%;
   font-family: 'Source Sans Pro', sans-serif;
   font-weight: 300;
+  scroll-behavior: smooth;
 }
 body {
   display: flex;
@@ -138,6 +139,35 @@ body {
 html,
 body {
   height: 100%;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-align: center;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  color: #5b5b5b;
+}
+h1 {
+  font-size: 6rem;
+}
+h2 {
+  font-size: 5rem;
+}
+h3 {
+  font-size: 2.5rem;
+}
+p {
+  font-size: 1.75rem;
 }
 .container {
   flex: 1 0 auto;
@@ -191,9 +221,7 @@ header .hcontainer {
 }
 header .hcontainer h1 {
   color: #fff;
-  font-size: 6rem;
   padding: 10px;
-  text-align: center;
 }
 @media (max-width: 1000px) {
   header .hcontainer h1 {
@@ -213,27 +241,27 @@ header .hcontainer p {
   padding: 10px;
   text-align: center;
 }
-header .start {
+.start {
   border-radius: 100%;
   width: 100px;
   height: 100px;
   background-color: #ef8376;
 }
-header .start .chevron-container {
+.start .chevron-container {
   animation: bounce 1.5s ease-in-out infinite;
   display: flex;
   justify-content: center;
   height: 100%;
 }
-header .start .chevron-container:hover {
+.start .chevron-container:hover {
   animation-iteration-count: 1;
   cursor: pointer;
 }
-header .start .chevron-container a {
+.start .chevron-container a {
   display: flex;
   align-items: center;
 }
-header .start .chevron-container a .chevron {
+.start .chevron-container a .chevron {
   display: block;
   margin: auto;
   height: 20px;
@@ -253,41 +281,75 @@ header .start .chevron-container a .chevron {
     transform: translate(0, -5px);
   }
 }
-section {
-  margin: 50px 0;
+#first {
+  padding: 50px 0 0;
 }
-section h2 {
-  color: #5b5b5b;
-  font-size: 4rem;
+#first h2 {
+  margin: 30px;
+  font-weight: 400;
+}
+#first p {
+  font-size: 2.5rem;
   text-align: center;
-  margin: 10px;
+  margin: 10px 0 60px 0;
+  font-weight: 300;
 }
-section p {
-  color: #5b5b5b;
-  font-size: 2rem;
-  text-align: center;
-  margin: 10px;
-}
-section .carousel {
+#first .carousel {
   background-color: #f0f4f4;
   display: flex;
   flex-direction: row;
   padding: 0 10px;
+  overflow: hidden;
 }
-section .carousel div {
+#first .carousel div {
   background-color: #fff;
   margin: 20px 10px;
 }
-section .carousel div img {
+#first .carousel div img {
   max-width: 360px;
 }
-section .carousel div h3 {
-  padding-top: 40px;
-  text-align: center;
-  font-size: 2rem;
+#first .carousel div h3 {
+  transition: color 0.5s ease;
+  cursor: pointer;
+  padding-top: 60px;
 }
-section .carousel div p {
-  padding-top: 10px;
-  font-size: 1.5rem;
+#first .carousel div h3:hover {
+  color: #ef8376;
+}
+#first .carousel div p {
+  font-size: 2rem;
+  padding: 10px 30px;
   line-height: 25px;
+}
+#second {
+  max-width: 85%;
+  padding: 0 7.5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#second img {
+  max-width: 100%;
+}
+#second h2 {
+  margin-top: 50px;
+  padding: 30px;
+}
+#second p:first-of-type {
+  font-size: 2.5rem;
+  text-align: center;
+  margin: 10px 0 60px 0;
+  font-weight: 300;
+}
+#second p {
+  line-height: 1.75em;
+}
+#second button {
+  background-color: #ef8376;
+  color: #fff;
+  font-size: 2rem;
+  border-radius: 0.5em;
+  padding: 0.65em 3em 0.65em 3em;
+  font-weight: 300;
+  margin: 30px;
 }
