@@ -346,10 +346,13 @@ header .hcontainer p {
 }
 #second button {
   background-color: #ef8376;
-  color: #fff;
   font-size: 2rem;
   border-radius: 0.5em;
   padding: 0.65em 3em 0.65em 3em;
   font-weight: 300;
   margin: 30px;
+}
+#second button a {
+  color: #fff;
+  text-decoration: none;
 }
