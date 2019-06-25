@@ -1,9 +1,13 @@
+@import url("fontawesome-all.min.css");
+@import url("fontawesome-all.min.css");
+.section-one {
+  background-color: #dfd7d7;
+  background-image: linear-gradient(#c7c0c0, white);
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
 */
-@import url("fontawesome-all.min.css");
-@import url("fontawesome-all.min.css");
 html,
 body,
 div,
@@ -293,18 +297,31 @@ h6 strong {
   font-weight: 600;
 }
 h2 {
-  font-size: 2.85em;
+  font-size: 2.2em;
+  text-align: center;
 }
 h3 {
-  font-size: 1.25em;
+  font-size: 1.9em;
 }
 h4 {
   font-size: 1em;
   margin: 0 0 0.25em 0;
 }
+p {
+  font-size: 1.6rem;
+}
 .section-one header {
   border: 2px solid lightcoral;
   text-align: center;
+}
+.section-one header h2 {
+  color: whitesmoke;
+  font-size: 2.6em;
+  font-weight: 700;
+}
+.section-one header h3 {
+  border: 3px dotted darkcyan;
+  color: whitesmoke;
 }
 .straw-img {
   width: 90%;
@@ -323,10 +340,8 @@ img {
   flex-wrap: wrap;
   box-sizing: border-box;
   align-items: stretch;
-  border: 2px solid hotpink;
 }
 .row > * {
   box-sizing: border-box;
-  border: 2px solid olivedrab;
-  padding: 1.5rem;
+  padding: 2rem 1.5rem 2rem 1.5rem;
 }
