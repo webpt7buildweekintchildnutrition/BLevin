@@ -1,0 +1,52 @@
+.background {
+    height: 85vh;
+    background-image: url(/img/ella-olsson-1184065-unsplash.jpg);
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .contact {
+        padding: 4.5rem 2.5rem 1.5rem 2.5rem;
+        width: 60rem;
+        border-radius: 4px;
+        background-color: rgba(43, 37, 44, 0.9);
+        color: @white;
+        form {
+            display: flex;
+            flex-direction: column;
+            h2 {
+                color: @white;
+                text-align: left;
+            }
+            button {
+                background-color: @contrast-red;
+                color: @white;
+                opacity: 1;
+                border-width: 0;
+                font-size: 2rem;
+                border-radius: 0.5em;
+                padding: 0.65em 3em 0.65em 3em;
+                font-weight: 300;
+                margin: 30px;
+            }
+            .form-fields {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+            }
+            .name, .email {
+                width: 45%;
+            }
+            .message {
+                width: 90%;
+            }
+            .name, .email, .message {
+                display: flex;
+                flex-direction: column;
+                font-size: 2rem;
+            }
+        }
+        
+    }
+}
