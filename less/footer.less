@@ -1,0 +1,26 @@
+footer {
+    padding: 20px;
+    background-color: @dark-background;
+    flex-shrink: 0;
+    ul {
+        display: flex;
+        justify-content: center;
+        li {
+            font-size: 4rem;
+            margin: 10px;
+        }
+    }
+    p {
+        color: @light-grey;
+        text-align: center;
+        font-size: 1.5rem;
+    }
+}
+
+.fab {
+    transition: color 0.5s ease;
+    color: @white;
+    &:hover {
+        color: @contrast-red;
+    }
+}
