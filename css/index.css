@@ -130,6 +130,7 @@ html {
   font-size: 62.5%;
   font-family: 'Source Sans Pro', sans-serif;
   font-weight: 300;
+  scroll-behavior: smooth;
 }
 body {
   display: flex;
@@ -138,6 +139,35 @@ body {
 html,
 body {
   height: 100%;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-align: center;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  color: #5b5b5b;
+}
+h1 {
+  font-size: 6rem;
+}
+h2 {
+  font-size: 5rem;
+}
+h3 {
+  font-size: 2.5rem;
+}
+p {
+  font-size: 1.75rem;
 }
 .container {
   flex: 1 0 auto;
@@ -155,6 +185,9 @@ footer ul li {
   font-size: 4rem;
   margin: 10px;
 }
+footer ul li a {
+  text-decoration: none;
+}
 footer p {
   color: #808080bf;
   text-align: center;
@@ -166,4 +199,160 @@ footer p {
 }
 .fab:hover {
   color: #ef8376;
+}
+header {
+  height: 100vh;
+  background-image: url(/img/brooke-lark-229136-unsplash.jpg);
+  background-size: cover;
+  background-position: center center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+header .hcontainer {
+  margin: 50px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 20px;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+header .hcontainer h1 {
+  color: #fff;
+  padding: 10px;
+}
+@media (max-width: 1000px) {
+  header .hcontainer h1 {
+    font-size: 5rem;
+  }
+}
+@media (max-width: 600px) {
+  header .hcontainer h1 {
+    font-size: 4rem;
+  }
+}
+header .hcontainer p {
+  border-top: 1px solid #808080bf;
+  color: #fff;
+  font-size: 2rem;
+  display: inline;
+  padding: 10px;
+  text-align: center;
+}
+.start {
+  border-radius: 100%;
+  width: 100px;
+  height: 100px;
+  background-color: #ef8376;
+}
+.start .chevron-container {
+  animation: bounce 1.5s ease-in-out infinite;
+  display: flex;
+  justify-content: center;
+  height: 100%;
+}
+.start .chevron-container:hover {
+  animation-iteration-count: 1;
+  cursor: pointer;
+}
+.start .chevron-container a {
+  display: flex;
+  align-items: center;
+}
+.start .chevron-container a .chevron {
+  display: block;
+  margin: auto;
+  height: 20px;
+  width: 20px;
+  border-bottom: 3px solid #fff;
+  border-left: 3px solid #fff;
+  transform: rotate(315deg);
+}
+@keyframes bounce {
+  0% {
+    transform: translate(0, -5px);
+  }
+  50% {
+    transform: translate(0, 5px);
+  }
+  100% {
+    transform: translate(0, -5px);
+  }
+}
+#first {
+  padding: 50px 0 0;
+}
+#first h2 {
+  margin: 30px;
+  font-weight: 400;
+}
+#first p {
+  font-size: 2.5rem;
+  text-align: center;
+  margin: 10px 0 60px 0;
+  font-weight: 300;
+}
+#first .carousel {
+  background-color: #f0f4f4;
+  display: flex;
+  flex-direction: row;
+  padding: 0 10px;
+  overflow: hidden;
+}
+#first .carousel div {
+  background-color: #fff;
+  margin: 20px 10px;
+}
+#first .carousel div img {
+  max-width: 360px;
+}
+#first .carousel div h3 {
+  transition: color 0.5s ease;
+  cursor: pointer;
+  padding-top: 60px;
+}
+#first .carousel div h3:hover {
+  color: #ef8376;
+}
+#first .carousel div p {
+  font-size: 2rem;
+  padding: 10px 30px;
+  line-height: 25px;
+}
+#second {
+  max-width: 85%;
+  padding: 0 7.5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#second img {
+  max-width: 100%;
+}
+#second h2 {
+  margin-top: 50px;
+  padding: 30px;
+}
+#second p:first-of-type {
+  font-size: 2.5rem;
+  text-align: center;
+  margin: 10px 0 60px 0;
+  font-weight: 300;
+}
+#second p {
+  line-height: 1.75em;
+}
+#second button {
+  background-color: #ef8376;
+  font-size: 2rem;
+  border-radius: 0.5em;
+  padding: 0.65em 3em 0.65em 3em;
+  font-weight: 300;
+  margin: 30px;
+}
+#second button a {
+  color: #fff;
+  text-decoration: none;
 }
