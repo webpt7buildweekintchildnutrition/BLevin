@@ -7,7 +7,7 @@
     justify-content: center;
     align-items: center;
     .contact {
-        padding: 4.5rem 2.5rem 1.5rem 2.5rem;
+        padding: 4% 3% 2% 3%;
         width: 60rem;
         border-radius: 4px;
         background-color: rgba(43, 37, 44, 0.9);
@@ -19,32 +19,58 @@
                 color: @white;
                 text-align: left;
             }
-            button {
-                background-color: @contrast-red;
-                color: @white;
-                opacity: 1;
-                border-width: 0;
-                font-size: 2rem;
-                border-radius: 0.5em;
-                padding: 0.65em 3em 0.65em 3em;
-                font-weight: 300;
-                margin: 30px;
+            .button-group {
+                display: flex;
+                flex-direction: row;
+                button {
+                    background-color: @contrast-red;
+                    color: @white;
+                    opacity: 1;
+                    border-width: 0;
+                    font-size: 2rem;
+                    border-radius: 0.5em;
+                    padding: 0.65em 2em 0.65em 2em;
+                    font-weight: 300;
+                    margin: 30px 10px;
+                    max-width: 50%;
+                }
+                .reset-button {
+                    background-color: @white;
+                    color: @contrast-red;
+                    border: 2px solid @contrast-red;
+                }
             }
+            
             .form-fields {
                 display: flex;
                 flex-direction: row;
                 flex-wrap: wrap;
+                justify-content: space-between;
+                label {
+                    padding-bottom: 10px;
+                }
+                input, textarea {
+                    font-size: 1.5rem;
+                    padding: 3px;
+                }
             }
             .name, .email {
-                width: 45%;
+                width: 48%;
+                input {
+                    height: 20px;
+                }
             }
             .message {
-                width: 90%;
+                width: 100%;
+                #msg {
+                    min-height: 150px;
+                }
             }
             .name, .email, .message {
                 display: flex;
                 flex-direction: column;
                 font-size: 2rem;
+                padding-top: 20px;
             }
         }
         
