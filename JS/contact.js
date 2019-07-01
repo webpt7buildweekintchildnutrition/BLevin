@@ -20,10 +20,13 @@ class Form {
         })
     }
     submit(){
+        const messageSent = document.createElement('p');
+        messageSent.textContent = 'Your message has been sent.';
         this.sendButton.addEventListener('click', () => {
-            const messageSent = document.createElement('p');
-            messageSent.textContent = 'Your message has been sent.'
             this.buttonGroup.appendChild(messageSent);
+            setTimeout(() => {
+                this.buttonGroup.removeChild(messageSent);
+            }, 1500)
         })
     }
   }
