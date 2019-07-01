@@ -4,25 +4,27 @@
 
 <head>
     <meta charset="UTF-8">
-
     <title>International Child Nutrition Status Tracking</title>
     <link href="css/index.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
     <script src="./JS/index.js" async></script>
+    <script src="./JS/nav.js" async></script>
     <script src="https://kit.fontawesome.com/be9165f221.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
     <div class='container'>
-        <header class="homepage-header">
             <nav>
                 <ul class="links">
                     <a href="index.html">Home</a>
-                    <a href="about.html">About Us</a>
+                    <a href="about.html">About&nbsp;Us</a>
                     <a href="donate.html">Donate</a>
-                    <a href="contact.html">Contact Us</a>
+                    <a href="contact.html">Contact&nbsp;Us</a>
                 </ul>
+                <a href="" class="nav-icon"><i class="fas fa-bars"></i></a>
             </nav>
+        <header class="homepage-header">
             <div class='hcontainer'>
                 <h1>International Child Nutrition Status Tracking</h1>
                 <p>Keep track of child malnutrition nonprofit data</p>
@@ -38,27 +40,31 @@
         <section id="first">
             <h2>Celery quandong swiss potato</h2>
             <p>Nori grape silver beet broccoli kombu beet greens fava bean potato quandong celery.</p>
-            <div class="carousel">
-                <div>
-                    <img src="img/brooke-lark-254998-unsplash.jpg">
-                    <h3>This is an H3 element</h3>
-                    <p>Salsify taro catsear garlic gram celery bitterleaf wattle seed collard greens nori.</p>
+            <div class="carousel-div">
+                <i class="fas fa-chevron-left left-button"></i>
+                <div class="carousel">
+                    <div class="card">
+                        <img src="img/brooke-lark-254998-unsplash.jpg">
+                        <h3>This is an H3 element</h3>
+                        <p>Salsify taro catsear garlic gram celery bitterleaf wattle seed collard greens nori.</p>
+                    </div>
+                    <div class="card">
+                        <img src="img/brooke-lark-289769-unsplash.jpg">
+                        <h3>This is an H3 element</h3>
+                        <p>Grape wattle seed kombu beetroot horseradish carrot squash brussels sprout chard.</p>
+                    </div>
+                    <div class="card">
+                        <img src="img/elli-o-65548-unsplash.jpg">
+                        <h3>This is an H3 element</h3>
+                        <p>Beetroot water spinach okra water chestnut ricebean pea summer purslane.</p>
+                    </div>
+                    <div class="card">
+                        <img src="img/lily-banse-365344-unsplash.jpg">
+                        <h3>This is an H3 element</h3>
+                        <p>Sea lettuce water spinach gram fava bean leek dandelion eggplant bush tomato.</p>
+                    </div>
                 </div>
-                <div>
-                    <img src="img/brooke-lark-289769-unsplash.jpg">
-                    <h3>This is an H3 element</h3>
-                    <p>Grape wattle seed kombu beetroot horseradish carrot squash brussels sprout chard.</p>
-                </div>
-                <div>
-                    <img src="img/elli-o-65548-unsplash.jpg">
-                    <h3>This is an H3 element</h3>
-                    <p>Beetroot water spinach okra water chestnut ricebean pea summer purslane.</p>
-                </div>
-                <div>
-                    <img src="img/lily-banse-365344-unsplash.jpg">
-                    <h3>This is an H3 element</h3>
-                    <p>Sea lettuce water spinach gram fava bean leek dandelion eggplant bush tomato.</p>
-                </div>
+                <i class="fas fa-chevron-right right-button"></i>
             </div>
         </section>
         <section id="second">
@@ -84,6 +90,13 @@
         </ul>
         <p class='copyright'>Made by Sofia Levin and Brian Marshall</p>
     </footer>
+    <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+        <defs>
+          <filter id="blur">
+            <feGaussianBlur stdDeviation="5" />
+          </filter>
+        </defs>
+      </svg>
 </body>
 
 </html>
