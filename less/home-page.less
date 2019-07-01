@@ -91,12 +91,12 @@
         font-weight: 300;
     }
     .carousel {
-        background-color: @light-grey-background;
         display: flex;
         flex-direction: row;
-        padding: 0 10px;
         overflow: hidden;
-        div {
+        .card {
+            display: flex;
+            flex-direction: column;
             background-color: @white;
             margin: 20px 10px;
             img {
@@ -152,6 +152,28 @@
             color: @white;
             text-decoration: none;
         }
+    }
+}
+
+.carousel-div {
+    background-color: @light-grey-background;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    .left-button, .right-button {
+        font-size: 2rem;
+        color: @main-text-color;
+        cursor: pointer;
+        transition: color 0.5s ease;
+        &:hover {
+            color: @contrast-red;
+        }
+    }
+    .left-button {
+        padding-left: 10px;
+    }
+    .right-button {
+        padding: 0 10px;
     }
 }
 
