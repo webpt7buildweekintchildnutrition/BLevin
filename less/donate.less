@@ -171,3 +171,91 @@ h3 a{
 // hr{
 //     border-bottom: 5px solid gray;
 // }
+
+
+/* Donation page CSS*/
+.donation-container{
+    height: 85vh;
+    background-image: url(/img/food-pic.jpg);
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    // background-color: red;
+    .donation{
+        padding: 4% 3% 2% 3%;
+        width: 60rem;
+        border-radius: 4px;
+        background-color: rgba(43, 37, 44, 0.9);
+        color: @white;
+        margin: 100px 4% 0;
+        form {
+            display: flex;
+            flex-direction: column;
+            h2 {
+                color: @white;
+                text-align: left;
+            }
+            .button-group {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                button {
+                    background-color: @contrast-red;
+                    color: @white;
+                    opacity: 1;
+                    border-width: 0;
+                    font-size: 2rem;
+                    border-radius: 0.5em;
+                    padding: 0.65em 2em 0.65em 2em;
+                    font-weight: 300;
+                    margin: 30px 10px;
+                    max-width: 50%;
+                    cursor: pointer;
+                }
+                .reset-button {
+                    background-color: @white;
+                    color: @contrast-red;
+                    border: 2px solid @contrast-red;
+                }
+                p {
+                    color: @white;
+                }
+            }
+            
+            .form-fields {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                label {
+                    padding-bottom: 10px;
+                }
+                input, textarea {
+                    font-size: 1.5rem;
+                    padding: 3px;
+                }
+            }
+            .name, .email, .payment {
+                width: 48%;
+                input {
+                    height: 20px;
+                }
+            }
+            .message {
+                width: 100%;
+                #msg {
+                    min-height: 150px;
+                }
+            }
+            .name, .payment, .email, .message {
+                display: flex;
+                flex-direction: column;
+                font-size: 2rem;
+                padding-top: 20px;
+            }
+        }
+        
+    }
+}

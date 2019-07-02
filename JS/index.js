@@ -69,3 +69,21 @@ button.addEventListener("click", (event) => {
         button.textContent = "Donate Here"
     }
 });
+
+// Donation Section 
+let largepayment = [];
+for (let i = 0; i < amount.length i++) {
+    if (amount[i] > 100) {
+        largepayment.push(amount[i]);
+    }
+    else {
+
+    }
+}
+console.log(largepayment.length);
+
+const message = document.querySelector(".send-button");
+
+message.addEventListener("click", (event) => {
+    message.textContent = "Thank you for your donation"
+});
